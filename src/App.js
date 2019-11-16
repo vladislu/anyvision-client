@@ -18,16 +18,22 @@ class App extends Component {
   }
 
   search = async (search_text) => {
-    Api.searchUpdate(search_text)
-    const search_results = await Api.search(search_text)
-    this.setState({ search_results: search_results.results, search_queries: [] })
-    console.log(this.state)
+    try {
+      Api.searchUpdate(search_text)
+      const search_results = await Api.search(search_text)
+      this.setState({ search_results: search_results.results, search_queries: [] })
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   top10 = async (state) => {
-    const search_queries = await Api.top10()
-    this.setState({ search_queries, search_results: [] })
-    console.log(this.state)
+    try {
+      const search_queries = await Api.top10()
+      this.setState({ search_queries, search_results: [] })
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   render() {
