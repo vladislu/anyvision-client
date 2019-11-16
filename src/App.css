@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  font-family: inherit;
+  display: inline-block;
+  border: none;
+  background: #56d0fb;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: #00bdff;
+}
+
+.headerStyle {
+  background: #56d0fb;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.item-row {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #f4f4f4;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.margin-right-5px {
+  margin-right: 5px;
+}
+
+.margin-left-5px {
+  margin-left: 5px;
+}
+
+.value-alert {
+  background: #56d0fb;
+  color: #f4f4f4;
+  border-radius: 3px;
+  padding: 0px 5px;
+}
+
+.child-featured {
+  flex-grow: 1;
+}
+
+.info-btn {
+  font-family: inherit;
+  font-weight: 400;
+  color: #56d0fb;
+  background-color: transparent;
+  border: 1px solid #56d0fb;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.info-btn:hover {
+  color: white;
+  background-color: #56d0fb;
+}
+
+.info-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(85, 206, 250, 0.5);
+}
+
+.align-item__center {
+  align-items: center;
+}
+
+.sub-result {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.frame-clip {
+  font-size: 0.8rem;
+  font-family: inherit;
+  border-radius: 3px;
+  padding: 0px 5px;
+}
+
+.kind {
+  background: #17a2b8;
+  color: #f4f4f4;
+}
+
+.primary-genre {
+  background: #56d0fb;
+  color: #f4f4f4;
+}
+
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+audio:focus,
+video:focus {
+  outline: none;
+}
+
+.font-size-2rem {
+  font-size: 2rem;
+  display: block;
+}
